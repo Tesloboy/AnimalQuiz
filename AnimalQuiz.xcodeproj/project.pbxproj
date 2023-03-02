@@ -13,6 +13,8 @@
 		CA5A89CF29AB6F3D008F928D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A89CD29AB6F3D008F928D /* Main.storyboard */; };
 		CA5A89D129AB6F3E008F928D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5A89D029AB6F3E008F928D /* Assets.xcassets */; };
 		CA5A89D429AB6F3E008F928D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A89D229AB6F3E008F928D /* LaunchScreen.storyboard */; };
+		CA8C8F8D29AF7D7600B3BB56 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C8F8C29AF7D7600B3BB56 /* QuestionViewController.swift */; };
+		CA8C8F8F29AF9D5C00B3BB56 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C8F8E29AF9D5C00B3BB56 /* FinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CA5A89D029AB6F3E008F928D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5A89D329AB6F3E008F928D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5A89D529AB6F3E008F928D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8C8F8C29AF7D7600B3BB56 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		CA8C8F8E29AF9D5C00B3BB56 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		CA5A89C629AB6F3D008F928D /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				CA5A89C729AB6F3D008F928D /* AppDelegate.swift */,
-				CA5A89C929AB6F3D008F928D /* SceneDelegate.swift */,
-				CA5A89CB29AB6F3D008F928D /* ViewController.swift */,
-				CA5A89CD29AB6F3D008F928D /* Main.storyboard */,
-				CA5A89D029AB6F3E008F928D /* Assets.xcassets */,
-				CA5A89D229AB6F3E008F928D /* LaunchScreen.storyboard */,
-				CA5A89D529AB6F3E008F928D /* Info.plist */,
+				CA5A89DE29AB78FA008F928D /* View Controllers */,
+				CA5A89DB29AB775A008F928D /* Storyboards */,
+				CA5A89DF29AB793A008F928D /* Models */,
+				CA5A89E029AB7961008F928D /* Resourses */,
+				CA5A89DD29AB787C008F928D /* Supporting Files */,
 			);
 			path = AnimalQuiz;
+			sourceTree = "<group>";
+		};
+		CA5A89DB29AB775A008F928D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A89CD29AB6F3D008F928D /* Main.storyboard */,
+				CA5A89D229AB6F3E008F928D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CA5A89DD29AB787C008F928D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A89C729AB6F3D008F928D /* AppDelegate.swift */,
+				CA5A89C929AB6F3D008F928D /* SceneDelegate.swift */,
+				CA5A89D529AB6F3E008F928D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA5A89DE29AB78FA008F928D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C8F8C29AF7D7600B3BB56 /* QuestionViewController.swift */,
+				CA5A89CB29AB6F3D008F928D /* ViewController.swift */,
+				CA8C8F8E29AF9D5C00B3BB56 /* FinalViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CA5A89DF29AB793A008F928D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA5A89E029AB7961008F928D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A89D029AB6F3E008F928D /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8C8F8F29AF9D5C00B3BB56 /* FinalViewController.swift in Sources */,
 				CA5A89CC29AB6F3D008F928D /* ViewController.swift in Sources */,
 				CA5A89C829AB6F3D008F928D /* AppDelegate.swift in Sources */,
+				CA8C8F8D29AF7D7600B3BB56 /* QuestionViewController.swift in Sources */,
 				CA5A89CA29AB6F3D008F928D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +337,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW9W8KTK4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +364,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW9W8KTK4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
