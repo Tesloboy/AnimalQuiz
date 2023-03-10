@@ -64,9 +64,9 @@
 		CA5A89C629AB6F3D008F928D /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CA5A89DF29AB793A008F928D /* Models */,
 				CA5A89DE29AB78FA008F928D /* View Controllers */,
 				CA5A89DB29AB775A008F928D /* Storyboards */,
-				CA5A89DF29AB793A008F928D /* Models */,
 				CA5A89E029AB7961008F928D /* Resourses */,
 				CA5A89DD29AB787C008F928D /* Supporting Files */,
 			);
@@ -95,8 +95,8 @@
 		CA5A89DE29AB78FA008F928D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA8C8F8C29AF7D7600B3BB56 /* QuestionViewController.swift */,
 				CA5A89CB29AB6F3D008F928D /* ViewController.swift */,
+				CA8C8F8C29AF7D7600B3BB56 /* QuestionViewController.swift */,
 				CA8C8F8E29AF9D5C00B3BB56 /* FinalViewController.swift */,
 			);
 			path = "View Controllers";
