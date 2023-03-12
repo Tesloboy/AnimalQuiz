@@ -21,7 +21,7 @@ struct Question {
 //создадим метод который будет возвращать вопрос и дополним им структуру
 
 extension Question {
-    static func getQuestiobns() -> [Question] {
+    static func getQuestions() -> [Question] {
        return [
         Question(text: "Какую еду вы предпочитаете?",
                  type: .single,

@@ -16,14 +16,17 @@ class QuestionViewController: UIViewController {
     @IBOutlet var singleStackView: UIStackView!
     @IBOutlet var multipleStackView: UIStackView!
     @IBOutlet var rangedStackView: UIStackView!
-    // MARK: - IB Outlet содержимого Stack View
+    // MARK: - IB Outlet содержимого Stack Vie
     @IBOutlet var singleButtons: [UIButton]!
     @IBOutlet var multipleLabels: [UILabel]!
     @IBOutlet var rangeLabels: [UILabel]!
     
+
+    
+    
     // MARK: - Properties (свойства)
     //добавим ссылку на экстеншн с вопросами
-    private let questions = Question.getQuestiobns()
+    private let questions = Question.getQuestions()
     //и добавим индекс
     private var questionIndex = 0
     //после добавления в switch showSingleStackView, получим ответы создавв computed property (вычисляемое свойство)
@@ -54,7 +57,7 @@ extension QuestionViewController {
         questionLabel.text = currentQuestion.text
         
         //сalculate progress(посчитаем прогресс)
-        let totalProgress = (Float(questionIndex) / Float(questions.count))
+        let totalProgress = Float(questionIndex) / Float(questions.count)
         
         //set progress for progressView (зададим прогресс для progressView)
         progressView.setProgress(totalProgress, animated: true)
@@ -70,7 +73,7 @@ extension QuestionViewController {
     }
     
     //Покажем текущий вопрос. Сделаем отдельный метод, который будет отображать StackView. Воспользуемся ранее созданным в enum'e типом ResponsedType делящем вопросы на типы:
-    private func showCurrentStackView(for  type: ResponsedType) {
+    private func showCurrentStackView(for type: ResponsedType) {
         switch type {
         case .single:
             showSingleStackView(with: currentAnswers)
@@ -83,7 +86,7 @@ extension QuestionViewController {
     
     private func showSingleStackView(with answers: [Answer]) {
         singleStackView.isHidden = false
-    
+
         //пройдемся циклом по кнопкам и соответствующим им ответам и сделаем это одновременно с помощью "zip"
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.text, for: .normal)
