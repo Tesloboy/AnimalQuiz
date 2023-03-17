@@ -30,3 +30,5 @@ enum AnimalType: Character {
         }
     }
 }
+
+

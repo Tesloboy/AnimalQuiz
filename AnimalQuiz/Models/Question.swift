@@ -45,9 +45,9 @@ extension Question {
                  type: .range,
                  answers: [
                     Answer(text: "Обожаю", type: .dog),
-                    Answer(text: "Обожаю", type: .cat),
-                    Answer(text: "Ненавижу", type: .rabbit),
-                    Answer(text: "Ненавижу", type: .turtle)
+                    Answer(text: "Люблю", type: .rabbit),
+                    Answer(text: "Равнодушен", type: .turtle),
+                    Answer(text: "Ненавижу", type: .cat)
                  ]
                 )
        ]

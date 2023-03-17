@@ -101,21 +101,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="w8L-FL-DGS" eventType="touchUpInside" id="xeQ-VR-rTY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3t-hL-fFa">
                                         <rect key="frame" x="0.0" y="68.5" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="w8L-FL-DGS" eventType="touchUpInside" id="Uih-ZD-Xm3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-Mn-g8A">
                                         <rect key="frame" x="0.0" y="137" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="w8L-FL-DGS" eventType="touchUpInside" id="Sck-Po-kGJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msM-h4-MXv">
                                         <rect key="frame" x="0.0" y="205.5" width="343" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="w8L-FL-DGS" eventType="touchUpInside" id="71p-N7-xSL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -131,15 +143,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHf-Qp-cOv">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Cm-GO-hRj">
                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="51A-hG-TKB"/>
-                                            </mask>
-                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="gef-Vj-mKW">
                                         <rect key="frame" x="0.0" y="55" width="343" height="31"/>
@@ -150,7 +157,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZL-xJ-KQc">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hZL-xJ-KQc">
                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -164,7 +171,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-Nb-Hye">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-Nb-Hye">
                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -178,7 +185,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2J-bT-kqR">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H2J-bT-kqR">
                                                 <rect key="frame" x="294" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -189,6 +196,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="multipleButtonAnswerPressed" destination="w8L-FL-DGS" eventType="touchUpInside" id="MbA-Mf-fMC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -220,7 +230,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Отправить"/>
                                         <connections>
-                                            <segue destination="jno-2T-xCN" kind="show" id="hu2-vH-zDY"/>
+                                            <action selector="rangedButtonAnswerPressed" destination="w8L-FL-DGS" eventType="touchUpInside" id="V3C-Jx-8ku"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -275,6 +285,10 @@
                         <outletCollection property="multipleLabels" destination="HXE-e9-zJS" collectionClass="NSMutableArray" id="0vG-Xi-2c0"/>
                         <outletCollection property="rangeLabels" destination="t9b-Ta-SIO" collectionClass="NSMutableArray" id="cYV-fd-vrY"/>
                         <outletCollection property="rangeLabels" destination="gjY-19-bvX" collectionClass="NSMutableArray" id="HDe-FT-ACt"/>
+                        <outletCollection property="multipleSwitches" destination="6Cm-GO-hRj" collectionClass="NSMutableArray" id="awU-dE-XY8"/>
+                        <outletCollection property="multipleSwitches" destination="hZL-xJ-KQc" collectionClass="NSMutableArray" id="JJF-w1-bQD"/>
+                        <outletCollection property="multipleSwitches" destination="bjM-Nb-Hye" collectionClass="NSMutableArray" id="bYm-yW-YG9"/>
+                        <outletCollection property="multipleSwitches" destination="H2J-bT-kqR" collectionClass="NSMutableArray" id="diy-c5-CUT"/>
                         <segue destination="jno-2T-xCN" kind="show" identifier="showResult" id="jKD-X0-tdN"/>
                     </connections>
                 </viewController>
@@ -317,10 +331,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты" id="ekd-rW-9Kx">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="fmU-Rz-2KO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="fmU-Rz-2KO">
+                            <connections>
+                                <segue destination="YS8-6k-gea" kind="unwind" unwindAction="unwindFor:" id="oji-PR-2dL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="finalDescription" destination="SeM-Be-cde" id="G9R-GV-PBn"/>
+                        <outlet property="finalLabel" destination="2ih-aV-OBI" id="YlE-ll-Vna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DF8-rh-SR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YS8-6k-gea" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2572" y="-2.2488755622188905"/>
         </scene>
@@ -343,9 +366,6 @@
             <point key="canvasLocation" x="975" y="-2"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="hu2-vH-zDY"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
