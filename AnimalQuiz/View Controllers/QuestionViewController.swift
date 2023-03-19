@@ -48,6 +48,8 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad() //super т.к вызываем родительский
          updateUI()
+        rangedSlider.value = 0
+        
     }
     
         // MARK: - ДЗ 1:

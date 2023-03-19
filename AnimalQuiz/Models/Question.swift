@@ -44,10 +44,10 @@ extension Question {
         Question(text: "Любите ли вы поездки на машине?",
                  type: .range,
                  answers: [
-                    Answer(text: "Обожаю", type: .dog),
-                    Answer(text: "Люблю", type: .rabbit),
+                    Answer(text: "Ненавижу", type: .cat),
                     Answer(text: "Равнодушен", type: .turtle),
-                    Answer(text: "Ненавижу", type: .cat)
+                    Answer(text: "Люблю", type: .rabbit),
+                    Answer(text: "Обожаю", type: .dog)
                  ]
                 )
        ]

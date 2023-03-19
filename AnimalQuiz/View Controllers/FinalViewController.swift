@@ -71,3 +71,83 @@ class FinalViewController: UIViewController {
     }
 }
 
+
+
+////РЕШЕНИЕ ОТ ПРЕПОДА:
+////КОД ВСЕЙ СТРАНИЦЫ:
+//
+//import UIKit
+//
+//class ResultsViewController: UIViewController {
+//
+//    @IBOutlet var animalTypeLabel: UILabel!
+//    @IBOutlet var descriptionLabel: UILabel!
+//
+//    var answers: [Answer]!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        navigationItem.hidesBackButton = true
+//
+//        //объявим переменные из 3 спооба
+//        let maxAnimal = getMaxAnimal()
+//        //добавим в UI
+//        updateUI(with: maxAnimal)
+//    }
+//}
+//
+//// MARK: - Private Methods
+//extension ResultsViewController {
+//
+//    //способ 3 перенесем сразу сюда для возможности его альтернативного использования
+//    private func getMaxAnimal() -> AnimalType? {
+//        return Dictionary(grouping: answers, by: { $0.type })
+//            .sorted(by: {$0.value.count > $1.value.count})
+//            .first?.key
+//    }
+//
+//    private func updateResult() {
+//
+////        //добавим переменные для первых 2-х способов:
+////        // словарь где ключ-типживотного, значение-количество раз его выбора
+////        var frequencyOfAnimals: [AnimalType: Int] = [:]
+////        //У нас был словарь, НЕ итерируемый список, соответственно нам нужно его ЗАИТЕРИРОВАТЬ. Методом .map сделаем список животных. Т.е взяли ответы и тип значения type преобразовали в AnimalType
+////        let animals = answers.map { $0.type }
+//
+//
+//         //Пройдемся циклом по списку. Если словарь содержит по ключу животное, ДОБАВЛЯЕМ в значение 1, если значения по ключу нет (nil) то значением будет "1"
+//
+////        //способ 1:
+////        for animal in animals {
+////            if let animalTypeCount = frequencyOfAnimals[animal] {
+////                frequencyOfAnimals.updateValue(animalTypeCount + 1, forKey: animal)
+////            } else {
+////                frequencyOfAnimals[animal] = 1
+////            }
+////        }
+////
+////        //способ 2:
+////        for animal in animals {
+////            frequencyOfAnimals[animal] = (frequencyOfAnimals[animal] ?? 0) + 1
+////        }
+////
+////        //отсортируем по убыванию, чтобы получить "первый" элемент
+////        let sortedFrequencyOfAnimals = frequencyOfAnimals.sorted { $0.value > $1.value }
+////        guard let mostFrequencyAnimal = sortedFrequencyOfAnimals.first?.key else { return }
+//
+////способ 3:
+////Решение в одну строку, без исп. переменных frequencyOfAnimals и animals
+////здесь мы использовали анонимные функции, такие как "Dictionary" (имеющую возможность группировать), "sorted" и "first?"
+////let mostFrequencyAnimal = Dictionary(grouping: answers, by: {$0.type } )
+////        .sorted(by: {$0.value.count > $1.value.count} )
+////        .first?.key
+//
+//    }
+//
+//    private func updateUI(with animal: AnimalType?) {
+//        animalTypeLabel.text = "Вы - \(animal?.rawValue ?? "🐶" )!"
+//        descriptionLabel.text = animal?.definition ?? ""
+//    }
+//}
+
